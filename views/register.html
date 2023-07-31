@@ -78,6 +78,9 @@
           </li>
         </ul>
       </nav>
+      <div class="main-banner">
+        <img src="/images/img-home-banner.jpg" alt="banner">
+      </div>
     </header>
     <!-- MAIN -->
     <main>
@@ -85,23 +88,23 @@
       <form action="" method="post" class="create-form">
         <div class="control-form">
           <label for="name">Nombre y apellido</label>
-          <input type="text" name="name" id="name" class="control" />
+          <input type="text" name="name" id="name" class="control" minlength="3" maxlength="20" required />
         </div>
         <div class="control-form">
           <label for="username">Nombre de usuari@</label>
-          <input type="text" name="username" id="username" class="control" />
+          <input type="text" name="username" id="username" class="control" required />
         </div>
         <div class="control-form">
           <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" class="control" />
+          <input type="email" name="email" id="email" class="control" required />
         </div>
         <div class="control-form">
           <label for="birthday">Fecha de nacimiento</label>
-          <input type="date" name="birthday" id="birthday" class="control" />
+          <input type="date" name="birthday" id="birthday" class="control" required/>
         </div>
         <div class="control-form">
           <label for="address">Domicilio</label>
-          <input type="text" name="address" id="address" class="control" />
+          <input type="text" name="address" id="address" class="control" required />
         </div>
         <div class="control-button-form">
           <label for="profile">Perfil del usuario</label>
@@ -155,7 +158,7 @@
         </div>
         <div class="control-form">
           <label for="picture">Foto de usuario</label>
-          <input type="file" name="picture" id="picture" class="control" />
+          <input type="file" name="picture" id="picture" class="control" required/>
         </div>
         <div class="control-form">
           <label for="password">Contraseña</label>
@@ -163,7 +166,7 @@
             type="password"
             name="password"
             id="password"
-            class="control"
+            class="control" required
           />
         </div>
         <div class="control-form">
@@ -172,7 +175,7 @@
             type="confPassword"
             name="confPassword"
             id="confPassword"
-            class="control"
+            class="control" required
           />
         </div>
         <div>
